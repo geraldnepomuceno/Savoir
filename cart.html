@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Savoir | Cart</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <!--navbar with 6 functional buttons -->
+    <section id="header">
+        <a href="#" onclick="window.location.href='index.html';"><img src="img/SAVIOR.png" class="logo" alt=""></a>
+        <h3 class="slogan">Know Your Confidence</h3>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="perfumes.html">Perfumes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!--Page header section -->
+    <section id="page-header" class="about-header">
+        <div class="layer">
+            <h2>Cart</h2>
+            <hr width="30%" color="#A72608">
+        <p>Apply coupons to get discount!</p>
+    </section>
+    <!--cart section-->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thread>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.png" alt=""></td>
+                    <td>Prada bag</td>
+                    <td>AED 100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>AED 100</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/p1.png" alt=""></td>
+                    <td>Prada bag</td>
+                    <td>AED 100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>AED 100</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </section>
+    <!--cart toal and voucher section-->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+        <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter coupon code">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>AED 100</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>AED 200</strong></td>
+                </tr>
+            </table>
+
+
+        </div>
+    </section>
+    <!--currency exchange api section-->
+    <section id="currency">
+        <div class="display-4 text-center">Currency exchange rates</div>
+        <div class="APIContainer">
+          <h4>Find out current currency exchange rates</h4>
+          <div class="currencyContainer">
+            <div style="margin-top: 2px">
+                <p>From: </p>
+                <p>To: </p>
+            </div>
+            <div style="margin-left: 20px">
+              <input class="form-control marginTopBottom" type="text" id="inputCurrencyFrom" value="EUR">
+              <input class="form-control marginTopBottom" type="text" id="inputCurrencyTo" value="USD">
+              <button class="normal" id="buttonCurrency">Calculate</button>
+            </div>
+            <div class="currencyResult">
+              <h4 id="currencyResult">Result: 0</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--newsletter section-->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Get E-mail updates about our latest and <span>special offers.</span></p>
+            <div class="form">
+                <input type="text" placeholder="Your Email address">
+                <button class="normal">Sign up</button>
+
+            </div>
+
+        </div>
+    </section>
+    <!--footer section-->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/SAVIOR2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Call us </strong>051 234 5678</p>
+            <p><strong>Send an Email on </strong>Savoir@kyc.com</p>
+            <p>Chat with our Customer Service</p>
+            <a href="#" onclick="window.location.href='about.html';"><p><strong>Visit our Store</strong></p></a>
+            
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#" onclick="window.location.href='about.html';">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#" onclick="window.location.href='contact.html';">Contact us</a>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-tumblr"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#" onclick="window.location.href='cart.html';">View cart</a>
+            <a href="#" onclick="window.location.href='cart.html';">My wishlist</a>
+            <a href="#" onclick="window.location.href='cart.html';">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>© Savoir Website by Gerald Nepomuceno</p>
+        </div>
+
+
+
+    </footer>
+    <!--currency exchange api java script-->
+    <script src="./js/cart.js" type="module"></script>
+</body>
+</head>
+</html>
